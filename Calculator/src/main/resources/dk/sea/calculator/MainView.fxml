@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="427.0" prefWidth="470.0" spacing="20.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dk.sea.calculator.MainController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <TextField fx:id="resultText" alignment="CENTER_RIGHT" editable="false" maxHeight="80.0" maxWidth="430.0" minHeight="80.0" minWidth="430.0" prefHeight="80.0" prefWidth="430.0" promptText="0" styleClass="result-field">
+         <font>
+            <Font name="Iosevka Custom" size="64.0" />
+         </font>
+         <padding>
+            <Insets bottom="1.0" right="10.0" top="1.0" />
+         </padding>
+      </TextField>
+      <HBox alignment="CENTER" maxHeight="60.0" maxWidth="430.0" minHeight="60.0" minWidth="430.0" prefHeight="60.0" prefWidth="430.0" spacing="10.0">
+         <children>
+            <Button alignment="CENTER" maxHeight="60.0" maxWidth="100.0" minHeight="60.0" minWidth="100.0" mnemonicParsing="false" onAction="#clearResult" prefHeight="60.0" prefWidth="100.0" styleClass="custom-button" text="C">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="Iosevka Custom" size="48.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </Button>
+            <Button alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="60.0" maxWidth="100.0" minHeight="60.0" minWidth="100.0" mnemonicParsing="false" onAction="#invertFunction" prefHeight="60.0" prefWidth="100.0" styleClass="custom-button" text="±">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <font>
+                  <Font name="Iosevka Custom" size="48.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" layoutX="65.0" layoutY="10.0" maxHeight="60.0" maxWidth="100.0" minHeight="60.0" minWidth="100.0" mnemonicParsing="false" onAction="#addToFunction" prefHeight="60.0" prefWidth="100.0" styleClass="custom-button" text="\%">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="Iosevka Custom" size="48.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </Button>
+            <Button alignment="CENTER" layoutX="120.0" layoutY="10.0" maxHeight="60.0" maxWidth="100.0" minHeight="60.0" minWidth="100.0" mnemonicParsing="false" onAction="#addToFunction" prefHeight="60.0" prefWidth="100.0" styleClass="custom-button" text="/">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="Iosevka Custom" size="48.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="60.0" maxWidth="430.0" minHeight="60.0" minWidth="430.0" prefHeight="60.0" prefWidth="430.0" spacing="10.0">
+         <children>
+            <Button alignment="CENTER" maxHeight="60.0" maxWidth="100.0" minHeight="60.0" minWidth="100.0" mnemonicParsing="false" onAction="#addToFunction" prefHeight="60.0" prefWidth="100.0" styleClass="custom-button" text="7">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="Iosevka Custom" size="48.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </Button>
+            <Button alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="60.0" maxWidth="100.0" minHeight="60.0" minWidth="100.0" mnemonicParsing="false" onAction="#addToFunction" prefHeight="60.0" prefWidth="100.0" styleClass="custom-button" text="8">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="Iosevka Custom" size="48.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </Button>
+            <Button alignment="CENTER" layoutX="65.0" layoutY="10.0" maxHeight="60.0" maxWidth="100.0" minHeight="60.0" minWidth="100.0" mnemonicParsing="false" onAction="#addToFunction" prefHeight="60.0" prefWidth="100.0" styleClass="custom-button" text="9">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="Iosevka Custom" size="48.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </Button>
+            <Button alignment="BOTTOM_CENTER" layoutX="120.0" layoutY="10.0" maxHeight="60.0" maxWidth="100.0" minHeight="60.0" minWidth="100.0" mnemonicParsing="false" onAction="#addToFunction" prefHeight="60.0" prefWidth="100.0" styleClass="custom-button" text="*">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <font>
+                  <Font name="Iosevka Custom" size="48.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="30.0" layoutY="90.0" maxHeight="60.0" maxWidth="430.0" minHeight="60.0" minWidth="430.0" prefHeight="60.0" prefWidth="430.0" spacing="10.0">
+         <children>
+            <Button alignment="CENTER" maxHeight="60.0" maxWidth="100.0" minHeight="60.0" minWidth="100.0" mnemonicParsing="false" onAction="#addToFunction" prefHeight="60.0" prefWidth="100.0" styleClass="custom-button" text="4">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="Iosevka Custom" size="48.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </Button>
+            <Button alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="60.0" maxWidth="100.0" minHeight="60.0" minWidth="100.0" mnemonicParsing="false" onAction="#addToFunction" prefHeight="60.0" prefWidth="100.0" styleClass="custom-button" text="5">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="Iosevka Custom" size="48.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </Button>
+            <Button alignment="CENTER" layoutX="65.0" layoutY="10.0" maxHeight="60.0" maxWidth="100.0" minHeight="60.0" minWidth="100.0" mnemonicParsing="false" onAction="#addToFunction" prefHeight="60.0" prefWidth="100.0" styleClass="custom-button" text="6">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="Iosevka Custom" size="48.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </Button>
+            <Button alignment="CENTER" layoutX="120.0" layoutY="10.0" maxHeight="60.0" maxWidth="100.0" minHeight="60.0" minWidth="100.0" mnemonicParsing="false" onAction="#addToFunction" prefHeight="60.0" prefWidth="100.0" styleClass="custom-button" text="-">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="Iosevka Custom" size="48.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="30.0" layoutY="124.0" maxHeight="60.0" maxWidth="430.0" minHeight="60.0" minWidth="430.0" prefHeight="60.0" prefWidth="430.0" spacing="10.0">
+         <children>
+            <Button alignment="CENTER" maxHeight="60.0" maxWidth="100.0" minHeight="60.0" minWidth="100.0" mnemonicParsing="false" onAction="#addToFunction" prefHeight="60.0" prefWidth="100.0" styleClass="custom-button" text="1">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="Iosevka Custom" size="48.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </Button>
+            <Button alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="60.0" maxWidth="100.0" minHeight="60.0" minWidth="100.0" mnemonicParsing="false" onAction="#addToFunction" prefHeight="60.0" prefWidth="100.0" styleClass="custom-button" text="2">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="Iosevka Custom" size="48.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </Button>
+            <Button alignment="CENTER" layoutX="65.0" layoutY="10.0" maxHeight="60.0" maxWidth="100.0" minHeight="60.0" minWidth="100.0" mnemonicParsing="false" onAction="#addToFunction" prefHeight="60.0" prefWidth="100.0" styleClass="custom-button" text="3">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="Iosevka Custom" size="48.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </Button>
+            <Button alignment="CENTER" layoutX="120.0" layoutY="10.0" maxHeight="60.0" maxWidth="100.0" minHeight="60.0" minWidth="100.0" mnemonicParsing="false" onAction="#addToFunction" prefHeight="60.0" prefWidth="100.0" styleClass="custom-button" text="+">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="Iosevka Custom" size="48.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="30.0" layoutY="158.0" maxHeight="60.0" maxWidth="430.0" minHeight="60.0" minWidth="430.0" prefHeight="60.0" prefWidth="430.0" spacing="10.0">
+         <children>
+            <Button alignment="CENTER" maxHeight="60.0" maxWidth="100.0" minHeight="60.0" minWidth="100.0" mnemonicParsing="false" onAction="#addToFunction" prefHeight="60.0" prefWidth="100.0" styleClass="custom-button" text="0">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="Iosevka Custom" size="48.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </Button>
+            <Button alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="60.0" maxWidth="100.0" minHeight="60.0" minWidth="100.0" mnemonicParsing="false" onAction="#addToFunction" prefHeight="60.0" prefWidth="100.0" styleClass="custom-button" text=".">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="Iosevka Custom" size="48.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </Button>
+            <Button alignment="TOP_CENTER" layoutX="65.0" layoutY="10.0" maxHeight="60.0" maxWidth="210.0" minHeight="60.0" minWidth="210.0" mnemonicParsing="false" onAction="#evaluateFunction" prefHeight="80.0" prefWidth="210.0" styleClass="custom-button" text="=">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="Iosevka Custom" size="48.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

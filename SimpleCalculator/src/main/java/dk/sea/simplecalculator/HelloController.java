@@ -17,21 +17,6 @@ private Label labelOperator;
 private TextField textNumber2;
 
 @FXML
-private Button buttonPlus;
-
-@FXML
-private Button buttonMinus;
-
-@FXML
-private Button buttonMultiply;
-
-@FXML
-private Button buttonDivide;
-
-@FXML
-private Button buttonCalculate;
-
-@FXML
 private Label labelResult;
 
 @FXML
